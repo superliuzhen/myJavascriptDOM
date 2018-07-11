@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div id="box" >
+			<ul class="sbox" >
+				<li class="ssbox"></li>
+				<li class="ssbox"></li>
+				<li class="ssbox"></li>
+			</ul>
+		</div>
+		<p title="一个属性值">
+			
+		</p>
+		<script type="text/javascript">
+			/* document节点
+			 * 元素节点
+			 * 属性节点
+			 * 文本节点*/
+			var shoping = document.getElementById("box");
+			var items = shoping.getElementsByTagName("*");
+			alert(items.length);
+			alert(typeof items);
+			
+			var paras = document.getElementsByTagName("p");
+			alert(paras[0].getAttribute("title"));
+			paras[0].setAttribute("title","修改后的属性值");
+			alert(paras[0].getAttribute("title"));
+		</script>
+	</body>
+</html>
